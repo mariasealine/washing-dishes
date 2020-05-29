@@ -1,0 +1,26 @@
+.dishes__title {
+    font-size: 54px;
+}
+.hide {
+    display: none;
+}
+.dishes__countdown {
+    position: absolute;
+    font-size: 40px;
+    width: 500px;
+    height: 300px;
+    background: black;
+    color: white;
+    left: 25%;
+    top: 35%;
+    padding: 25px;
+    text-align: center;
+}
+
+.dishes__result {
+    font-size: 85px;
+    text-transform: uppercase;
+    left: 25%;
+    position: absolute;
+    top: 35%;
+}
