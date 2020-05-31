@@ -1,8 +1,9 @@
 body {
-    background-image: url(./../assets/IMG_3141.JPG);
+    background-image: url(./../assets/dishes.jpg);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: cover;
+    min-height: 800px;
     background-color: black;
 }
 
@@ -21,7 +22,7 @@ body {
     font-size: 20px;
 }
 .input-item {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     display: flex;
     flex-direction: column;
 }
@@ -35,6 +36,7 @@ body {
 .dishes__button-wrapper {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 button {
@@ -63,16 +65,16 @@ button {
 }
 
 .dishes__countdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-size: 40px;
     width: 60%;
     height: 200px;
     margin: 0 auto;
-    background: black;
     color: white;
     padding: 25px;
+    -webkit-animation: sizingCountdown 1s linear;
+    animation: sizingCountdown 1s linear;
+    animation-iteration-count: 4;
 }
 
 .dishes__result {
@@ -81,7 +83,7 @@ button {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    -webkit-animation: rotation 7s linear;
+    -webkit-animation: rotateResult 0.7s linear;
     animation: rotateResult 0.7s linear;
     animation-iteration-count: 3;
 }
@@ -89,6 +91,36 @@ button {
 .hide {
     display: none;
 }
+
+@keyframes sizingCountdown {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes sizingCountdown {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes sizingCountdown {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes sizingCountdown {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes sizingCountdown {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
 
 @keyframes rotateResult {
     from { transform: rotate(0deg); }
