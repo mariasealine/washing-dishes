@@ -9,6 +9,8 @@ body {
 
 .dishes__title {
     font-size: 54px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
     text-align: center;
     color: white;
 }
@@ -20,6 +22,8 @@ body {
     align-content: space-between;
     color: white;
     font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
 }
 .input-item {
     padding: 20px 20px 0 20px;
@@ -36,14 +40,17 @@ body {
 .dishes__button-wrapper {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding: 20px 0;
+    margin: 0 8px;
 }
 
 button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
     height: 50px;
-    width: 200px;
-    margin: 20px;
-    font-size: 16px;
+    width: 300px;
+    margin: 20px 0;
+    font-size: 20px;
     color: white;
     cursor: pointer;
 }
@@ -78,6 +85,8 @@ button {
 }
 
 .dishes__result {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
     font-size: 54px;
     color: white;
     text-transform: uppercase;
