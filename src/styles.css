@@ -52,11 +52,14 @@ button {
     margin: 20px 0;
     font-size: 20px;
     color: white;
+    outline: none;
+    border: 2px solid white;
     cursor: pointer;
 }
 
 .dishes__result-button {
     background: #783c7f;
+    border-right: none;
 }
 
 .dishes__result-button:hover {
