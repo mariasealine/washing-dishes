@@ -37,8 +37,9 @@ const displayName = (list, index) => {
 const addParticipant = () => {
     const inputFieldsContainer = document.querySelector('.dishes__input-fields');
     const inputFieldsLength = inputFieldsContainer.children.length;
-    const inputField = inputFieldsContainer.querySelector('.input-item').cloneNode(true);
-
+    const inputField = inputFieldsContainer.querySelector('.input-item').cloneNode(true);  
+ 
+    inputField.querySelector('.input-field').value = '';
     inputField.firstChild.nodeValue = 'Name person ' + (inputFieldsLength+1);
     inputFieldsContainer.appendChild(inputField);
 }
